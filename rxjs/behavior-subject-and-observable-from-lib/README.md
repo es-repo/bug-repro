@@ -1,1 +1,1 @@
-[RXJS bug 5105](https://github.com/ReactiveX/rxjs/issues/5105)
+[RxJS bug 5105](https://github.com/ReactiveX/rxjs/issues/5105)
