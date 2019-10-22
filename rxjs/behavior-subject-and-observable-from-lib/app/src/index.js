@@ -1,10 +1,10 @@
 import { BehaviorSubject } from 'rxjs';
-import createSubject from 'lib';
+import createObservable from 'lib';
 
-const observer = new BehaviorSubject(undefined);
-createSubject().subscribe(observer);
+const subject = new BehaviorSubject(undefined);
+createObservable().subscribe(subject);
 
-observer.subscribe(v => {
+subject.subscribe(v => {
   console.log('value: ' + v)
-  console.log('getValue(): ' + observer.getValue())
+  console.log('getValue(): ' + subject.getValue())
 });
