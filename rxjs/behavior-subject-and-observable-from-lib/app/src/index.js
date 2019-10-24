@@ -8,11 +8,9 @@ const subject2 = new BehaviorSubject(undefined);
 interval(1000).subscribe(subject2);
 
 subject1.subscribe(v => {
-  console.log('lib value: ' + v)
-  console.log('lib getValue(): ' + subject1.getValue())
+  console.log(`Observable from lib: value=${v} getValue()=${subject1.getValue()}`);
 });
 
 subject2.subscribe(v => {
-  console.log('app value: ' + v)
-  console.log('app getValue(): ' + subject2.getValue())
+  console.log(`Observable from app: value=${v} getValue()=${subject2.getValue()}`);
 });
